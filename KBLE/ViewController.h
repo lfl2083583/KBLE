@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreBluetooth/CoreBluetooth.h>
 
-@interface ViewController : UIViewController
+#define K_BLE_NAME @"作为判断搜索到蓝牙，设备名称"
+#define K_BLE_MAC @"作为判断搜索到蓝牙，设备MAC地址"
+
+@interface ViewController : UIViewController <CBCentralManagerDelegate, CBPeripheralDelegate>
 
 
 @end
